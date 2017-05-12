@@ -15,6 +15,11 @@
 		B0EAF87C1EC6425300DCEA49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EAF87A1EC6425300DCEA49 /* Main.storyboard */; };
 		B0EAF87E1EC6425300DCEA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0EAF87D1EC6425300DCEA49 /* Assets.xcassets */; };
 		B0EAF8811EC6425300DCEA49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EAF87F1EC6425300DCEA49 /* LaunchScreen.storyboard */; };
+		B0EAF8871EC67A3100DCEA49 /* AGCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAF8861EC67A3100DCEA49 /* AGCamera.swift */; };
+		B0EAF8891EC67A7000DCEA49 /* AGCameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAF8881EC67A7000DCEA49 /* AGCameraDelegate.swift */; };
+		B0EAF88B1EC67BA100DCEA49 /* AGCaptureDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAF88A1EC67BA100DCEA49 /* AGCaptureDirection.swift */; };
+		B0EAF88D1EC67BCD00DCEA49 /* AGCaptureQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAF88C1EC67BCD00DCEA49 /* AGCaptureQuality.swift */; };
+		B0EAF88F1EC67C6300DCEA49 /* AGCaptureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAF88E1EC67C6300DCEA49 /* AGCaptureType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +46,11 @@
 		B0EAF87D1EC6425300DCEA49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0EAF8801EC6425300DCEA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0EAF8821EC6425300DCEA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0EAF8861EC67A3100DCEA49 /* AGCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGCamera.swift; sourceTree = "<group>"; };
+		B0EAF8881EC67A7000DCEA49 /* AGCameraDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGCameraDelegate.swift; sourceTree = "<group>"; };
+		B0EAF88A1EC67BA100DCEA49 /* AGCaptureDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGCaptureDirection.swift; sourceTree = "<group>"; };
+		B0EAF88C1EC67BCD00DCEA49 /* AGCaptureQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGCaptureQuality.swift; sourceTree = "<group>"; };
+		B0EAF88E1EC67C6300DCEA49 /* AGCaptureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGCaptureType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +148,7 @@
 		B0EAF86C1EC640FB00DCEA49 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				B0EAF8881EC67A7000DCEA49 /* AGCameraDelegate.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -145,6 +156,9 @@
 		B0EAF86D1EC6411D00DCEA49 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				B0EAF88A1EC67BA100DCEA49 /* AGCaptureDirection.swift */,
+				B0EAF88C1EC67BCD00DCEA49 /* AGCaptureQuality.swift */,
+				B0EAF88E1EC67C6300DCEA49 /* AGCaptureType.swift */,
 			);
 			name = Enums;
 			sourceTree = "<group>";
@@ -159,6 +173,7 @@
 		B0EAF86F1EC6412B00DCEA49 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B0EAF8861EC67A3100DCEA49 /* AGCamera.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -256,6 +271,7 @@
 					B0EAF84E1EC6404900DCEA49 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 6RYABEZ5W2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					B0EAF8571EC6404900DCEA49 = {
@@ -322,6 +338,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0EAF88B1EC67BA100DCEA49 /* AGCaptureDirection.swift in Sources */,
+				B0EAF88F1EC67C6300DCEA49 /* AGCaptureType.swift in Sources */,
+				B0EAF8871EC67A3100DCEA49 /* AGCamera.swift in Sources */,
+				B0EAF88D1EC67BCD00DCEA49 /* AGCaptureQuality.swift in Sources */,
+				B0EAF8891EC67A7000DCEA49 /* AGCameraDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +497,7 @@
 		B0EAF8641EC6404900DCEA49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6RYABEZ5W2;
@@ -489,6 +511,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aramikg.AGCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -496,6 +519,7 @@
 		B0EAF8651EC6404900DCEA49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6RYABEZ5W2;
@@ -516,6 +540,7 @@
 		B0EAF8671EC6404900DCEA49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6RYABEZ5W2;
 				INFOPLIST_FILE = AGCameraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -528,6 +553,7 @@
 		B0EAF8681EC6404900DCEA49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6RYABEZ5W2;
 				INFOPLIST_FILE = AGCameraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
