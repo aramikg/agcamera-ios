@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0C2BE701ECA1F5C00FF1062 /* AGCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EAF84F1EC6404900DCEA49 /* AGCamera.framework */; };
+		B0C2BE711ECA1F5C00FF1062 /* AGCamera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0EAF84F1EC6404900DCEA49 /* AGCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B0EAF8591EC6404900DCEA49 /* AGCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EAF84F1EC6404900DCEA49 /* AGCamera.framework */; };
 		B0EAF85E1EC6404900DCEA49 /* AGCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAF85D1EC6404900DCEA49 /* AGCameraTests.swift */; };
 		B0EAF8601EC6404900DCEA49 /* AGCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = B0EAF8521EC6404900DCEA49 /* AGCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -17,12 +19,19 @@
 		B0EAF8811EC6425300DCEA49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EAF87F1EC6425300DCEA49 /* LaunchScreen.storyboard */; };
 		B0EAF8871EC67A3100DCEA49 /* AGCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAF8861EC67A3100DCEA49 /* AGCamera.swift */; };
 		B0EAF8891EC67A7000DCEA49 /* AGCameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAF8881EC67A7000DCEA49 /* AGCameraDelegate.swift */; };
-		B0EAF88B1EC67BA100DCEA49 /* AGCaptureDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAF88A1EC67BA100DCEA49 /* AGCaptureDirection.swift */; };
-		B0EAF88D1EC67BCD00DCEA49 /* AGCaptureQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAF88C1EC67BCD00DCEA49 /* AGCaptureQuality.swift */; };
-		B0EAF88F1EC67C6300DCEA49 /* AGCaptureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAF88E1EC67C6300DCEA49 /* AGCaptureType.swift */; };
+		B0EAF88B1EC67BA100DCEA49 /* AGCameraDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAF88A1EC67BA100DCEA49 /* AGCameraDirection.swift */; };
+		B0EAF88F1EC67C6300DCEA49 /* AGCameraCaptureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAF88E1EC67C6300DCEA49 /* AGCameraCaptureType.swift */; };
+		B0EAF8911EC6A45F00DCEA49 /* AGCameraSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EAF8901EC6A45F00DCEA49 /* AGCameraSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B0C2BE721ECA1F5C00FF1062 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0EAF8461EC6404900DCEA49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0EAF84E1EC6404900DCEA49;
+			remoteInfo = AGCamera;
+		};
 		B0EAF85A1EC6404900DCEA49 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B0EAF8461EC6404900DCEA49 /* Project object */;
@@ -31,6 +40,20 @@
 			remoteInfo = AGCamera;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B0C2BE741ECA1F5D00FF1062 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B0C2BE711ECA1F5C00FF1062 /* AGCamera.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B0EAF84F1EC6404900DCEA49 /* AGCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AGCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,9 +71,9 @@
 		B0EAF8821EC6425300DCEA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0EAF8861EC67A3100DCEA49 /* AGCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGCamera.swift; sourceTree = "<group>"; };
 		B0EAF8881EC67A7000DCEA49 /* AGCameraDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGCameraDelegate.swift; sourceTree = "<group>"; };
-		B0EAF88A1EC67BA100DCEA49 /* AGCaptureDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGCaptureDirection.swift; sourceTree = "<group>"; };
-		B0EAF88C1EC67BCD00DCEA49 /* AGCaptureQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGCaptureQuality.swift; sourceTree = "<group>"; };
-		B0EAF88E1EC67C6300DCEA49 /* AGCaptureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGCaptureType.swift; sourceTree = "<group>"; };
+		B0EAF88A1EC67BA100DCEA49 /* AGCameraDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGCameraDirection.swift; sourceTree = "<group>"; };
+		B0EAF88E1EC67C6300DCEA49 /* AGCameraCaptureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGCameraCaptureType.swift; sourceTree = "<group>"; };
+		B0EAF8901EC6A45F00DCEA49 /* AGCameraSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGCameraSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C2BE701ECA1F5C00FF1062 /* AGCamera.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,9 +180,8 @@
 		B0EAF86D1EC6411D00DCEA49 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				B0EAF88A1EC67BA100DCEA49 /* AGCaptureDirection.swift */,
-				B0EAF88C1EC67BCD00DCEA49 /* AGCaptureQuality.swift */,
-				B0EAF88E1EC67C6300DCEA49 /* AGCaptureType.swift */,
+				B0EAF88A1EC67BA100DCEA49 /* AGCameraDirection.swift */,
+				B0EAF88E1EC67C6300DCEA49 /* AGCameraCaptureType.swift */,
 			);
 			name = Enums;
 			sourceTree = "<group>";
@@ -166,6 +189,7 @@
 		B0EAF86E1EC6412400DCEA49 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B0EAF8901EC6A45F00DCEA49 /* AGCameraSettings.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -248,10 +272,12 @@
 				B0EAF8701EC6425200DCEA49 /* Sources */,
 				B0EAF8711EC6425200DCEA49 /* Frameworks */,
 				B0EAF8721EC6425200DCEA49 /* Resources */,
+				B0C2BE741ECA1F5D00FF1062 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B0C2BE731ECA1F5C00FF1062 /* PBXTargetDependency */,
 			);
 			name = ExampleApplication;
 			productName = ExampleApplication;
@@ -338,10 +364,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0EAF88B1EC67BA100DCEA49 /* AGCaptureDirection.swift in Sources */,
-				B0EAF88F1EC67C6300DCEA49 /* AGCaptureType.swift in Sources */,
+				B0EAF88B1EC67BA100DCEA49 /* AGCameraDirection.swift in Sources */,
+				B0EAF88F1EC67C6300DCEA49 /* AGCameraCaptureType.swift in Sources */,
 				B0EAF8871EC67A3100DCEA49 /* AGCamera.swift in Sources */,
-				B0EAF88D1EC67BCD00DCEA49 /* AGCaptureQuality.swift in Sources */,
+				B0EAF8911EC6A45F00DCEA49 /* AGCameraSettings.swift in Sources */,
 				B0EAF8891EC67A7000DCEA49 /* AGCameraDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +392,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B0C2BE731ECA1F5C00FF1062 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0EAF84E1EC6404900DCEA49 /* AGCamera */;
+			targetProxy = B0C2BE721ECA1F5C00FF1062 /* PBXContainerItemProxy */;
+		};
 		B0EAF85B1EC6404900DCEA49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B0EAF84E1EC6404900DCEA49 /* AGCamera */;
@@ -566,6 +597,7 @@
 		B0EAF8841EC6425300DCEA49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6RYABEZ5W2;
 				INFOPLIST_FILE = ExampleApplication/Info.plist;
@@ -579,6 +611,7 @@
 		B0EAF8851EC6425300DCEA49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6RYABEZ5W2;
 				INFOPLIST_FILE = ExampleApplication/Info.plist;
@@ -608,6 +641,7 @@
 				B0EAF8651EC6404900DCEA49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0EAF8661EC6404900DCEA49 /* Build configuration list for PBXNativeTarget "AGCameraTests" */ = {
 			isa = XCConfigurationList;
@@ -616,6 +650,7 @@
 				B0EAF8681EC6404900DCEA49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0EAF8831EC6425300DCEA49 /* Build configuration list for PBXNativeTarget "ExampleApplication" */ = {
 			isa = XCConfigurationList;
@@ -624,6 +659,7 @@
 				B0EAF8851EC6425300DCEA49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

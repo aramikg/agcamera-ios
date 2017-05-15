@@ -6,8 +6,7 @@
 //  Copyright © 2017 aramikg. All rights reserved.
 //
 
-public enum AGCaptureType {
+public enum AGCameraCaptureType {
     case photo
     case video
-    
 }
